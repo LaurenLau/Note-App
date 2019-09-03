@@ -1,4 +1,4 @@
-# Note-app
+# Note app
 
 ## Notes app user stories
 
