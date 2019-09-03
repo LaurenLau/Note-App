@@ -14,7 +14,8 @@ function storesANote() {
   var noteList = new NoteList();
 
   console.log("Test feature: It can add new notes")
-  noteList.add();
-  assert.isTrue(noteList.all.includes("My favourite language is Javascript"))
+  noteList.add("New note");
+  console.log(noteList.all)
+  assert.isTrue(noteList.all.includes("New note"))
 };
 storesANote();

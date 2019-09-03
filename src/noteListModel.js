@@ -4,13 +4,15 @@
   function NoteList() {
     this.all = []
   };
+
   var newNote = new Note();
 
-  NoteList.prototype.notes = function(){
+  NoteList.prototype.all = function(){
     return this.all;
   }
 
-  NoteList.prototype.add = function(){
+  NoteList.prototype.add = function(string){
+    var newNote = new Note(string)
     return this.all.push(newNote.text);
   }
 

@@ -2,11 +2,9 @@
 
 (function(exports) {
 
-  function Note() {
-    this.text = "My favourite language is Javascript";
+  function Note(string) {
+    this.text = string;
   };
-  
-  
 
   exports.Note = Note;
   })(this);
