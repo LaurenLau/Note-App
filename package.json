@@ -1,0 +1,22 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "## Notes app user stories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurenLau/Note-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurenLau/Note-app/issues"
+  },
+  "homepage": "https://github.com/LaurenLau/Note-app#readme",
+  "dependencies": {
+    "hapi": "^18.1.0"
+  }
+}
