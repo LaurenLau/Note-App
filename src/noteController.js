@@ -1,14 +1,25 @@
-  // Creating a new List:
-  var list = new NoteList
-  // Adding new notes:
-  list.add('first')
-  list.add('second')
-  list.add('third')
+  
+(function(exports) {
+  function NoteController() {
+    this.list = new NoteList
 
-  // Creating a new View:
-  var view = new NoteListView(list)
-
-  // Injecting into the app div above:
-  window.onload = function what(){
-  document.getElementById("app").innerHTML = view.convert()
   };
+
+
+  NoteController.prototype.control = function() {
+
+    // this is required to access the variable in the controller
+    this.list.add('Hi')
+    this.list.add('Hello')
+    this.list.add('Hey')
+
+    var view = new NoteListView(this.list)
+
+    document.getElementById("app").innerHTML = view.convert()
+  };
+
+
+
+  exports.NoteController = NoteController;
+})(this);
+

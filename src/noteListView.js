@@ -7,7 +7,7 @@
 
   NoteListView.prototype.convert = function(){
     var html = '<ul><li><div>';
-  
+    
     this.noteList.view().map(function(note) {
       html += note;
       html += '</div></li><li><div>';
