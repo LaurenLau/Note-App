@@ -2,19 +2,18 @@
 
 (function(exports) {
   function NoteList() {
-    this.all = []
+    this.all = [];
   };
-
-  var newNote = new Note();
-
-  NoteList.prototype.all = function(){
-    return this.all;
-  }
 
   NoteList.prototype.add = function(string){
     var newNote = new Note(string)
     return this.all.push(newNote.text);
   }
 
-  exports.NoteList = NoteList;
+  NoteList.prototype.view = function(){
+    return this.all;
+  }
+
+
+  exports.NoteList = NoteList.prototype.constructor = NoteList;
   })(this);

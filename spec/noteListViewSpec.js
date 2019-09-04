@@ -7,7 +7,7 @@ function convertsNoteListToHTML() {
 
   noteList.add("New note");
   noteList.add("My favourite language is JS");
-// assert.isTrue(noteListView.);
+  // assert.isTrue();
 };
 
 convertsNoteListToHTML();

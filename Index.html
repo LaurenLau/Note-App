@@ -12,5 +12,25 @@
   <script src=spec/noteListViewSpec.js></script>
 
 </head>
-<body></body>
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script>
+    // Creating a new List:
+      var list = new NoteList
+      // Adding new notes:
+      list.add('first note')
+      list.add('second')
+      list.add('third')
+    
+      // Creating a new View:
+      var view = new NoteListView(list)
+
+      // Injecting into the app div above:
+      window.onload = function what(){
+      document.getElementById("app").innerHTML = view.convert()
+      };
+    </script>
+  </body>
 </html>
