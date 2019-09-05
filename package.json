@@ -18,5 +18,8 @@
   "homepage": "https://github.com/LaurenLau/Note-app#readme",
   "dependencies": {
     "hapi": "^18.1.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
   }
 }
