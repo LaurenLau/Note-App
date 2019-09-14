@@ -1,8 +1,7 @@
   
 (function(exports) {
-  function NoteController() {
-    this.list = new NoteList
-
+  function NoteController(noteList = new NoteList) {
+    this.list = noteList
   };
 
 
@@ -17,6 +16,7 @@
 
     document.getElementById("app").innerHTML = view.convert()
   };
+  
   exports.NoteController = NoteController;
 })(this);
 

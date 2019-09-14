@@ -14,6 +14,5 @@
     return this.all;
   }
 
-
-  exports.NoteList = NoteList.prototype.constructor = NoteList;
+  exports.NoteList = NoteList;
   })(this);

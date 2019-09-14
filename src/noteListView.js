@@ -6,13 +6,9 @@
   };
 
   NoteListView.prototype.convert = function(){
-    var html = '<ul><li><div>';
-    
-    this.noteList.view().map(function(note) {
-      html += note;
-      html += '</div></li><li><div>';
-    });
-    html += '</div></li></ul>';
+   
+    var array = this.noteList.view().map( x => "<li><div>" + x + "</div></li>").join("");
+    var html = "<ul>" + array + "</ul>";
     return html;
   }
 
